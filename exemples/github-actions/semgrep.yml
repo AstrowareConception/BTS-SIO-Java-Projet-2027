@@ -1,0 +1,21 @@
+name: Semgrep CE
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    container:
+      image: semgrep/semgrep
+
+    steps:
+      - uses: actions/checkout@v6
+      - name: Scan Semgrep Community Edition
+        run: semgrep scan --config auto
