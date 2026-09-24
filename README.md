@@ -68,6 +68,8 @@ Le socle commun reste obligatoire pour tous.
 - [16 — Checklist](docs/16-checklist.md)
 - [17 — Ressources](docs/17-ressources.md)
 - [18 — Dépannage](docs/18-depannage.md)
+- [19 — Maquettes & modélisation](docs/19-maquettes-modelisation.md)
+- [20 — Guide d’autonomie](docs/20-autonomie.md)
 
 ## Philosophie
 
