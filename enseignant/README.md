@@ -34,3 +34,8 @@ Voir :
 - [incidents](incidents.md)
 - [grille de suivi](grille-suivi.md)
 - [grille finale](grille-finale.md)
+
+
+## Pilotage chronologique
+
+Utiliser aussi le [tableau de bord chronologique](tableau-bord-chronologie.md) pour classer chaque étudiant en vert/orange/rouge aux principaux jalons de la semaine.
