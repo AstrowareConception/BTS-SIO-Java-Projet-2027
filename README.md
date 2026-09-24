@@ -34,6 +34,13 @@ Chaque étudiant choisit :
 
 Le socle commun reste obligatoire pour tous.
 
+## Où en suis-je ?
+
+- [Chronologie complète et feux vert/orange/rouge](docs/02-planning.md)
+- [Que faire chez moi ce soir ?](docs/21-travailler-chez-soi.md)
+- [Guide d'autonomie](docs/20-autonomie.md)
+- [Checklist finale](docs/16-checklist.md)
+
 ## Kit technique
 
 - [Starter Spring Boot + JavaFX](starter-kit/README.md)
@@ -43,11 +50,24 @@ Le socle commun reste obligatoire pour tous.
 - [JavaFX](docs/06-javafx.md)
 - [Fichiers multimédias](docs/07-fichiers.md)
 - [Sécurité](docs/08-securite.md)
-- [Tests & CI](docs/09-tests-ci.md)
+- [Stratégie de tests](docs/22-strategie-tests.md)
+- [CI & qualité par niveaux](docs/23-ci-qualite.md)
 - [OpenAPI & HATEOAS](docs/10-openapi-hateoas.md)
 - [Ressources externes](docs/17-ressources.md)
 
-## Parcours
+## Ateliers autonomes
+
+Si vous êtes 🟢 et souhaitez aller plus loin :
+
+1. [JUnit, Mockito et tests Spring](ateliers/01-tests-junit-spring.md)
+2. [JaCoCo + GitHub Actions](ateliers/02-jacoco-github-actions.md)
+3. [Semgrep Community Edition](ateliers/03-semgrep.md)
+4. [SonarQube Community Build](ateliers/04-sonarqube.md)
+5. [Choisir un axe d'approfondissement](docs/24-parcours-approfondissement.md)
+
+Des exemples prêts à adapter sont fournis dans `exemples/github-actions/`.
+
+## Parcours complet
 
 - [00 — Démarrage](docs/00-demarrage.md)
 - [01 — Architecture](docs/01-architecture.md)
@@ -70,6 +90,10 @@ Le socle commun reste obligatoire pour tous.
 - [18 — Dépannage](docs/18-depannage.md)
 - [19 — Maquettes & modélisation](docs/19-maquettes-modelisation.md)
 - [20 — Guide d’autonomie](docs/20-autonomie.md)
+- [21 — Travailler chez soi](docs/21-travailler-chez-soi.md)
+- [22 — Stratégie de tests](docs/22-strategie-tests.md)
+- [23 — CI & qualité](docs/23-ci-qualite.md)
+- [24 — Approfondissement](docs/24-parcours-approfondissement.md)
 
 ## Philosophie
 
