@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/media_starter}
+    username: ${DB_USER:media}
+    password: ${DB_PASSWORD:media}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 55MB
+
+app:
+  storage:
+    root: ${STORAGE_ROOT:./storage}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs

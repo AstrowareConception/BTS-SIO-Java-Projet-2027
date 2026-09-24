@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Starter — Admin</title>
+    <style>
+        body{font-family:system-ui,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;line-height:1.45}
+        header{display:flex;justify-content:space-between;align-items:center}
+        form{display:grid;gap:.7rem;max-width:520px;padding:1rem;border:1px solid #ccc;border-radius:.6rem}
+        input,textarea,button{font:inherit;padding:.6rem}
+        table{width:100%;border-collapse:collapse;margin-top:1.5rem}
+        th,td{padding:.6rem;border-bottom:1px solid #ddd;text-align:left}
+        .toolbar{display:flex;gap:.5rem;margin:1rem 0}
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <h1>Administration des médias</h1>
+        <p>Exemple pédagogique Spring MVC + Thymeleaf.</p>
+    </div>
+    <form th:action="@{/logout}" method="post" style="border:0;padding:0">
+        <button type="submit">Déconnexion</button>
+    </form>
+</header>
+
+<h2>Ajouter un média</h2>
+<form th:action="@{/admin/assets}" method="post" enctype="multipart/form-data">
+    <label>Titre <input name="title" required></label>
+    <label>Description <textarea name="description"></textarea></label>
+    <label>Fichier <input type="file" name="file" required></label>
+    <button type="submit">Uploader</button>
+</form>
+
+<h2>Catalogue</h2>
+<form th:action="@{/admin}" method="get" class="toolbar" style="max-width:none;border:0;padding:0;display:flex">
+    <input name="search" th:value="${search}" placeholder="Rechercher">
+    <button type="submit">Rechercher</button>
+</form>
+
+<table>
+    <thead><tr><th>ID</th><th>Titre</th><th>Type</th><th>Taille</th><th>Statut</th></tr></thead>
+    <tbody>
+    <tr th:each="asset : ${page.content}">
+        <td th:text="${asset.id}"></td>
+        <td th:text="${asset.title}"></td>
+        <td th:text="${asset.mimeType}"></td>
+        <td th:text="${asset.sizeBytes}"></td>
+        <td th:text="${asset.status}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
