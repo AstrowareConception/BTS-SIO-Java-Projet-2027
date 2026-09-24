@@ -10,6 +10,7 @@ Ce starter montre une architecture minimale mais professionnelle.
 - springdoc-openapi 3.1.1
 - PostgreSQL 17
 - Gson 2.14.0 côté client
+- JaCoCo 0.8.15
 
 **En février 2027, vérifiez les versions stables avant de mettre à jour.** Ne changez pas de version au milieu de la semaine sans raison.
 
@@ -45,11 +46,9 @@ Serveur : http://localhost:8080
 - `contrib / contrib123!`
 - `admin / admin123!`
 
-Ces comptes sont **uniquement pédagogiques**. Votre projet final doit gérer ses utilisateurs selon votre conception.
+Ces comptes sont **uniquement pédagogiques**.
 
 ## 3. Admin Web
-
-Ouvrir :
 
 http://localhost:8080/admin
 
@@ -59,11 +58,6 @@ Connectez-vous avec `contrib` ou `admin`.
 
 ```bash
 curl http://localhost:8080/api/health
-```
-
-Puis :
-
-```bash
 curl -u user:user123! http://localhost:8080/api/assets
 ```
 
@@ -73,9 +67,23 @@ curl -u user:user123! http://localhost:8080/api/assets
 mvn -pl javafx-client javafx:run
 ```
 
-Le client demande URL, login et mot de passe. Il charge le catalogue par REST.
+Le client charge le catalogue par REST. Pour lire un média, il le télécharge via `HttpClient` authentifié dans un fichier temporaire puis utilise JavaFX `MediaPlayer`.
 
-Pour lire un média, il le télécharge d'abord via `HttpClient` authentifié dans un fichier temporaire puis le confie à JavaFX `MediaPlayer`. Cela évite de contourner la sécurité HTTP.
+## 6. Tests et couverture
+
+Exécuter toute la vérification :
+
+```bash
+mvn verify
+```
+
+Le backend produit un rapport JaCoCo dans :
+
+```text
+backend/target/site/jacoco/index.html
+```
+
+Le workflow GitHub Actions du dépôt exécute lui aussi `mvn verify` et publie le rapport JaCoCo comme artifact.
 
 ## Ce que montre le starter
 
@@ -93,7 +101,16 @@ Pour lire un média, il le télécharge d'abord via `HttpClient` authentifié da
 - player ;
 - OpenAPI ;
 - test unitaire ;
+- JaCoCo ;
 - CI.
+
+## Ateliers
+
+Après avoir compris le starter :
+- [Tests JUnit/Spring](../ateliers/01-tests-junit-spring.md)
+- [JaCoCo + Actions](../ateliers/02-jacoco-github-actions.md)
+- [Semgrep](../ateliers/03-semgrep.md)
+- [SonarQube](../ateliers/04-sonarqube.md)
 
 ## Ce qui manque volontairement
 
