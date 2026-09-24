@@ -38,7 +38,7 @@ public class MediaAsset {
     @Column(nullable = false)
     private Instant createdAt = Instant.now();
 
-    protected MediaAsset() {}
+    public MediaAsset() {}
 
     public Long getId() { return id; }
     public String getTitle() { return title; }
