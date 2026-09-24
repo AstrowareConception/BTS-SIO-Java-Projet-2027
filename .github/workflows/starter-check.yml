@@ -18,7 +18,7 @@ jobs:
         working-directory: starter-kit
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-java@v5
         with:
@@ -30,4 +30,12 @@ jobs:
         run: mvn -B validate
 
       - name: Compile and test
-        run: mvn -B test
+        run: mvn -B verify
+
+      - name: Publier la couverture JaCoCo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: starter-jacoco
+          path: starter-kit/backend/target/site/jacoco/
+          if-no-files-found: ignore
