@@ -24,6 +24,18 @@ starter-kit/
 └── pom.xml
 ```
 
+## Avant de démarrer — prérequis et parcours
+
+Le starter ne prolonge pas directement une application JavaFX avec SQLite/JDBC local. Ici, **Spring Boot** possède la persistance PostgreSQL (Spring Data JPA) et les fichiers ; **JavaFX est un client REST**, jamais un accès direct au SGBD.
+
+- [Pont entre les cours Java 01–05 et le projet](../docs/25-pont-entre-les-cours-et-le-projet.md)
+- [Atelier de prise en main guidée](../docs/26-atelier-passerelle-spring-boot.md)
+- [Matrice de vérification des prérequis](../docs/27-matrice-preparation-projet.md)
+
+**Versions :** le starter et sa CI utilisent **JDK 25**, même si le cours général présente JDK 27. Vérifiez `java -version` **et** `mvn -version`; sélectionnez JDK 25 pour le projet dans IntelliJ. Ne modifiez pas le `pom.xml` uniquement pour suivre le dernier JDK sans rejouer les tests et la recette.
+
+**Sécurité :** les comptes de démonstration ci-dessous sont fictifs et prévus pour un poste local. Le client JavaFX et l'administration ne doivent pas être exposés à Internet tels quels, surtout via HTTP Basic non protégé par HTTPS.
+
 ## 1. Base de données
 
 ```bash
