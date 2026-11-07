@@ -32,7 +32,7 @@ public class MediaClientApp extends Application {
 
     @Override
     public void start(Stage stage) {
-        passwordField.setText("user123!");
+        passwordField.setPromptText("Mot de passe du compte local");
 
         Button connect = new Button("Connexion");
         connect.setOnAction(event -> connect());
