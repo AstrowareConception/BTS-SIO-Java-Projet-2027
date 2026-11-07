@@ -1,5 +1,7 @@
 # 00 — Démarrage
 
+**Prérequis pédagogique :** avant ce lundi, lisez [la passerelle entre les cours et le projet](25-pont-entre-les-cours-et-le-projet.md) et terminez [l'atelier Spring Boot/REST/JavaFX](26-atelier-passerelle-spring-boot.md). Le starter cible JDK 25 LTS ; ne recopiez pas du code nécessitant JDK 27.
+
 ## Avant de coder
 1. Lire les trois sujets.
 2. Choisir un sujet.

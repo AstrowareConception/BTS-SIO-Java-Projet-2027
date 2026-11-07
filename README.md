@@ -34,6 +34,16 @@ Chaque étudiant choisit :
 
 Le socle commun reste obligatoire pour tous.
 
+## Préparer le projet à partir des cours Java 2026/2027
+
+**Attention :** les cinq premiers cours Java enseignent un desktop autonome (JavaFX + SQLite/JDBC). Le projet intensif impose une architecture **distribuée** (JavaFX → REST → Spring Boot → PostgreSQL/JPA + fichiers), avec administration Web. Le passage de l'un à l'autre fait l'objet d'une préparation spécifique :
+
+- [Correspondance détaillée des six cours avec le projet](docs/25-pont-entre-les-cours-et-le-projet.md)
+- [Atelier préparatoire Spring Boot / JavaFX / JPA](docs/26-atelier-passerelle-spring-boot.md)
+- [Matrice de validation des prérequis pour l'enseignant](docs/27-matrice-preparation-projet.md)
+
+Le **starter de projet cible JDK 25 LTS / JavaFX 26**, alors que les cours Java généraux ont été préparés avec JDK 27 / JavaFX 27. Le projet reste épinglé à sa version validée ; voir le [guide de compatibilité](docs/25-pont-entre-les-cours-et-le-projet.md#versions--ne-pas-confondre-apprentissage-et-cible-projet).
+
 ## Où en suis-je ?
 
 - [Chronologie complète et feux vert/orange/rouge](docs/02-planning.md)
@@ -94,6 +104,9 @@ Des exemples prêts à adapter sont fournis dans `exemples/github-actions/`.
 - [22 — Stratégie de tests](docs/22-strategie-tests.md)
 - [23 — CI & qualité](docs/23-ci-qualite.md)
 - [24 — Approfondissement](docs/24-parcours-approfondissement.md)
+- [25 — Cours Java → projet Spring Boot](docs/25-pont-entre-les-cours-et-le-projet.md)
+- [26 — Atelier passerelle](docs/26-atelier-passerelle-spring-boot.md)
+- [27 — Matrice de préparation](docs/27-matrice-preparation-projet.md)
 
 ## Philosophie
 
