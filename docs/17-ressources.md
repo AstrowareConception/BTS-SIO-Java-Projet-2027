@@ -1,5 +1,10 @@
 # 17 — Ressources externes sélectionnées
 
+## Correspondance avec les cours de l'année
+- [Cours 01–05 → exigences du projet](25-pont-entre-les-cours-et-le-projet.md)
+- [Atelier préparatoire](26-atelier-passerelle-spring-boot.md)
+- [Matrice enseignant](27-matrice-preparation-projet.md)
+
 ## Spring
 - Spring Boot : https://docs.spring.io/spring-boot/
 - REST : https://spring.io/guides/gs/rest-service/
@@ -23,7 +28,7 @@
 - CompletableFuture : https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/CompletableFuture.html
 
 ## Tests
-- JUnit 5 : https://junit.org/junit5/
+- JUnit (documentation actuelle, gamme JUnit 6 utilisée dans les cours) : https://junit.org/
 - Spring Boot testing : https://docs.spring.io/spring-boot/reference/testing/
 - Mockito : https://site.mockito.org/
 
